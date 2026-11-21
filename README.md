@@ -20,3 +20,14 @@ Satellite corn monitoring with NASA/IBM's **Prithvi-EO-2.0** foundation model, U
 | `logs/metrics.csv`, `logs/hparams.yaml` | Full training log and model settings |
 
 Model: `prithvi_eo_v2_tiny_tl`, 12 epochs, ~44 min on a free Colab T4 GPU. Dataset: [ibm-nasa-geospatial/multi-temporal-crop-classification](https://huggingface.co/datasets/ibm-nasa-geospatial/multi-temporal-crop-classification). The trained model file (~113 MB) is not included because it exceeds GitHub's 100 MB file limit.
+
+## `pipeline_outputs/`
+
+Copies of the pipeline's results for the presentation team. The pipeline itself stores these in MongoDB (charts in GridFS, briefs in the `briefs` collection).
+
+| File | What it is |
+|---|---|
+| `corn_belt_yield_change.png` | Major corn states by satellite health vs. USDA yield change (the 7-of-8 result) |
+| `health_vs_yield.png` | Satellite corn health vs. USDA final yield per state (r = 0.51) |
+| `corn_futures_wasde.png` | 2022 corn futures with USDA report days marked |
+| `brief_trader.md`, `brief_lender.md` | The two final briefs written by the AI agent (both passed the automatic fact-check) |
