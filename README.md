@@ -6,8 +6,10 @@ Satellite corn monitoring with NASA/IBM's **Prithvi-EO-2.0** foundation model, U
 
 | Stage | Notebook | Output |
 |---|---|---|
-| 1. Train the satellite model | `cornsight_train.ipynb` | `training_outputs/` in this repo (published by the notebook's last step) |
-| 2. Data pipeline, MongoDB, AI agent | `cornsight_pipeline.ipynb` | Reads `training_outputs/` from this repo; stores all data, charts and AI briefs in MongoDB |
+| 1. Train the satellite model | [`cornsight_train.ipynb`](cornsight_train.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlonsoManchego/cornsight/blob/main/cornsight_train.ipynb) | `training_outputs/` in this repo (published by the notebook's last step) |
+| 2. Data pipeline, MongoDB, AI agent | [`cornsight_pipeline.ipynb`](cornsight_pipeline.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlonsoManchego/cornsight/blob/main/cornsight_pipeline.ipynb) | Reads `training_outputs/` from this repo; stores all data, charts and AI briefs in MongoDB |
+
+Running the pipeline needs a free Colab T4 GPU and two secrets in Colab's 🔑 Secrets panel: `MONGODB_URI` and `NASS_API_KEY`. Keys are never stored in the notebooks.
 
 ## `training_outputs/`
 
